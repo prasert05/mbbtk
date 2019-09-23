@@ -13,6 +13,7 @@ __Prerequisites:__ Personal laptop or Server with Linux 64-bit operation system.
 ```sh
 # download Miniconda3 from Anaconda repository
 $ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+
 # execute the downloaded package
 $ bash Miniconda3-latest-Linux-x86_64.sh
 ```
@@ -31,7 +32,7 @@ $ conda config --add channels conda-forge
 
 ## 3. Manage environment
 
-This content is referred from [Conda's managing environment docs](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html). User can create, export, list, remove, and update environments as you prefer. Or even backup and share the environment via `.yaml` metafile.
+This content is referred from [Conda's managing environment docs](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html). User can create, export, list, remove, and update environments as you prefer. Or even backup and share the environment via `.yml` metafile.
 
 The `base` is the default environment when the installation is completed. But if you don't want `base` to activativate automatically, simply type:
 ```sh
@@ -41,6 +42,12 @@ $ conda config --set auto_activate_base false
 ```sh
 # Create environment named 'myenv'
 $ conda create --name myenv
+
+# activate 'myenv' environment
+$ conda activate myenv
+
+# deactivate 'myenv' environment
+$ conda deactivate myenv
 ```
 When conda asks you to proceed, type `y`, or you can integrate `-y` parameter in the upper command to let the conda know I accept all change.
 
@@ -62,4 +69,38 @@ $ conda create -n myenv scipy
 ```sh
 # create 'deepsig' environment with python 2.7 version, 'biopython' recipe version 1.72, 'tensorflow' recipe version 1.5.0 and 'keras' recipe version 2.2.4
 $ conda create -n deepsig python=2.7 biopython=1.72 tensorflow=1.5.0 keras=2.2.4
+```
+### Export environment as `.yml` file
+```sh
+# export current environment into environment.yml
+$ conda env export > environment.yml
+```
+
+### Creating an environment from an environment.yml file:
+```sh
+# create and import environment from environment.yml
+$ conda env create -f environment.yml
+```
+
+### Check list of environment you've created:
+```sh
+# check environment list
+$ conda list env
+```
+Example result:
+> Note: The `*` shows the current environment
+```
+(base) jiratchaya@PowerEdge-R440:~/rawdata$ conda env list
+# conda environments:
+#
+base                  *  /home/jiratchaya/miniconda3
+cutadapt                 /home/jiratchaya/miniconda3/envs/cutadapt
+deepsig                  /home/jiratchaya/miniconda3/envs/deepsig
+fastp                    /home/jiratchaya/miniconda3/envs/fastp  
+phobius                  /home/jiratchaya/miniconda3/envs/phobius
+trinity                  /home/jiratchaya/miniconda3/envs/trinity
+```
+### Removing an environment:
+```sh
+$ conda remove --name myenv --all
 ```
