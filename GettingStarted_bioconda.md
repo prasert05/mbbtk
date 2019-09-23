@@ -45,3 +45,21 @@ $ conda create --name myenv
 When conda asks you to proceed, type `y`, or you can integrate `-y` parameter in the upper command to let the conda know I accept all change.
 
 After create environment is finished, it will keep the metafile in `~/miniconda3/envs/`
+
+### Create an environment with a specific version of Python
+```sh
+# Create 'myenv' environment with a specific python 3.7 version
+$ conda create -n myenv python=3.7
+```
+### Create an environment with a specific package
+```sh
+# Install 'scipy' recipe within 'myenv' environment
+$ conda create -n myenv scipy
+```
+
+### Create environment with a specific version of python and version of recipe
+
+```sh
+# create 'deepsig' environment with python 2.7 version, 'biopython' recipe version 1.72, 'tensorflow' recipe version 1.5.0 and 'keras' recipe version 2.2.4
+$ conda create -n deepsig python=2.7 biopython=1.72 tensorflow=1.5.0 keras=2.2.4
+```
