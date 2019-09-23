@@ -18,7 +18,7 @@ $ bash Miniconda3-latest-Linux-x86_64.sh
 ```
 During install the Miniconda, follow the End-User License Agreement (EULA) and its instruction. 
 
-__Mandatory: While the installation is completed, restart the terminal.__
+ :warning: :warning: __Mandatory: While the installation is completed, restart the terminal.__ :warning: :warning:
 
 ## 2. Set up channels
 By default, the main channel of miniconda to download the recipes is `conda-forge`. According to the reerence, The conda-forge channel contains many general-purpose packages not already found in the `defaults` channel. Setting the `Bioconda` channel to the first prioroty is required for bioinformatics research.
@@ -46,18 +46,18 @@ When conda asks you to proceed, type `y`, or you can integrate `-y` parameter in
 
 After create environment is finished, it will keep the metafile in `~/miniconda3/envs/`
 
-### Create an environment with a specific version of Python
+### Create an environment with a specific version of Python:
 ```sh
 # Create 'myenv' environment with a specific python 3.7 version
 $ conda create -n myenv python=3.7
 ```
-### Create an environment with a specific package
+### Create an environment with a specific package:
 ```sh
 # Install 'scipy' recipe within 'myenv' environment
 $ conda create -n myenv scipy
 ```
 
-### Create environment with a specific version of python and version of recipe
+### Create environment with a specific version of python and version of recipe:
 
 ```sh
 # create 'deepsig' environment with python 2.7 version, 'biopython' recipe version 1.72, 'tensorflow' recipe version 1.5.0 and 'keras' recipe version 2.2.4
