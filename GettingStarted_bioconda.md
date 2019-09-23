@@ -1,5 +1,5 @@
 # Getting started with Bioconda and Bioconda
-In our lab, We prefer to use Miniconda3 to manage environment for such a software with a specific version of its dependencies by isolate them into a specific environments. Moreover, we usually perform computational analyses on shared server of our department, so managing environment with miniconda make user to perform any software without root permission and user can manage environment, such as add recipes, create environment, or even delete environment by themselves.
+In our lab, We prefer to use Miniconda3 to manage environment for such a software with a specific version of its dependencies by isolate them into a specific environments. Moreover, we usually perform computational analyses on shared server of our department, so managing environment with miniconda make user to perform any software without root permission and user can manage environment, such as add recipes (any packages in bioconda), create environment, or even delete environment by themselves.
 
 Prior to use Bioconda, the Miniconda3 package is required to install on your local machine. We briefly summarized how to install Bioconda from [Bioconda's user docs](https://bioconda.github.io/user/install.html) as a reference for installation.
 
@@ -21,7 +21,7 @@ During install the Miniconda, follow the End-User License Agreement (EULA) and i
 
  :warning: :warning: __While the installation is completed, restart the terminal.__ :warning: :warning:
 
-## 2. Set up channels
+## 2. Set up channels to bioconda
 By default, the main channel of miniconda to download the recipes is `conda-forge`. According to the reerence, The conda-forge channel contains many general-purpose packages not already found in the `defaults` channel. Setting the `Bioconda` channel to the first prioroty is required for bioinformatics research.
 
 ```sh
@@ -30,7 +30,7 @@ $ conda config --add channels bioconda
 $ conda config --add channels conda-forge
 ```
 
-## 3. Manage environment
+## 3. Manage environment (optional)
 
 This content is referred from [Conda's managing environment docs](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html). User can create, export, list, remove, and update environments as you prefer. Or even backup and share the environment via `.yml` metafile.
 
@@ -49,7 +49,7 @@ $ conda activate myenv
 # deactivate 'myenv' environment
 $ conda deactivate myenv
 ```
-When conda asks you to proceed, type `y`, or you can integrate `-y` parameter in the upper command to let the conda know I accept all change.
+When conda asks you to proceed, type `y`, or you can integrate `-y` parameter in the upper command to let the conda know that I accept all change.
 
 After create environment is finished, it will keep the metafile in `~/miniconda3/envs/`
 
@@ -104,3 +104,11 @@ trinity                  /home/jiratchaya/miniconda3/envs/trinity
 ```sh
 $ conda remove --name myenv --all
 ```
+## 4. Install bioconda recipes
+You can browse available bioconda recipes from [![Recipe index](https://img.shields.io/static/v1?label=Recipe&message=index&color=blue)](https://bioconda.github.io/conda-recipe_index.html)
+
+to install bioconda recipe, simply type:
+```sh
+$ conda install trinity
+```
+When bioconda asks you to proceed, type `y`, or you can integrate `-y` parameter in the upper command to let the bioconda know that I accept all change.
