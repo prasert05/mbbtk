@@ -18,7 +18,7 @@ $ bash Miniconda3-latest-Linux-x86_64.sh
 ```
 During install the Miniconda, follow the End-User License Agreement (EULA) and its instruction. 
 
- :warning: :warning: __Mandatory: While the installation is completed, restart the terminal.__ :warning: :warning:
+ :warning: :warning: __While the installation is completed, restart the terminal.__ :warning: :warning:
 
 ## 2. Set up channels
 By default, the main channel of miniconda to download the recipes is `conda-forge`. According to the reerence, The conda-forge channel contains many general-purpose packages not already found in the `defaults` channel. Setting the `Bioconda` channel to the first prioroty is required for bioinformatics research.
