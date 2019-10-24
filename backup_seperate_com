@@ -1,0 +1,40 @@
+#!/bin/bash
+# =============================================================================
+# This shell script can used for compress folder seperatly into *.tar.gz file
+# Created by Prasert Yodsawat
+# Version 1.0 (tested on Ubuntu)
+# Required software: pigz
+# ============================================================================
+# 
+# START
+# 
+# Clear all variable
+unset flist_com
+unset i
+unset nCPU
+unset j
+# Enter number of CPU
+read -p "Enter number of CPU: " nCPU
+echo -e "\n========================\n [STATUS] Please wait...\n========================\n"
+# Check "pigz" exists
+if [[ `type -t pigz` == "file" ]]; then
+# Find folder's name
+flist_com=`ls -1`
+j=`date --rfc-3339=date`
+# Compress each folder to *.tar.gz
+for i in $flist_com; do
+tar -cp $i"/" | pigz --name -p $nCPU > 'backup_'$j'_'$i'.tar.gz'
+done
+# 
+echo -e "\n========================\n [STATUS] Done !\n========================\n"
+else
+echo "\n========================\n [ERROR]\n Please install \"pigz\" first!\n========================\n"
+fi
+# Clear all variable again
+unset flist_com
+unset i
+unset nCPU
+unset j
+# 
+# END
+
