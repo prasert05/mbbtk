@@ -13,6 +13,8 @@ unset flist_com
 unset i
 unset nCPU
 unset j
+# Print script title
+echo -e "\nThis shell script can used for compress folder seperatly into *.tar.gz file\n"
 # Enter number of CPU
 read -p "Enter number of CPU: " nCPU
 echo -e "\n========================\n [STATUS] Please wait...\n========================\n"
