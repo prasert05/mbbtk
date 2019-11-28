@@ -14,11 +14,9 @@
 	# and operating system name
 	```
 
-* Java JDK/JRE version 11
-* Perl 5
-* Python 3
-
-	> __optional:__ Perl 5 and Python 3 are already installed in miniconda platform. Java is need to be installed seperately by simply download through bioconda channel:
+* Java JDK/JRE version 11 [![java](https://img.shields.io/badge/install-java-orange)](https://anaconda.org/conda-forge/openjdk)
+ 
+ > __optional:__ For conda user, Java is need to be installed seperately by simply download through bioconda channel:
 
 	```
 	# create environment name 'iprscan' and install openjdk
