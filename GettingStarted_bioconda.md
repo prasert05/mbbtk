@@ -85,7 +85,7 @@ $ conda env create -f environment.yml
 ### Check list of environment you've created:
 ```sh
 # check environment list
-$ conda list env
+$ conda env list
 ```
 Example result:
 > Note: The `*` shows the current environment

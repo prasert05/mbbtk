@@ -18,8 +18,9 @@
 * Perl 5
 * Python 3
 
-__optional:__ Perl 5 and Python 3 are already installed in miniconda platform. Java is need to be installed seperately by simply download through bioconda channel:
+	> __optional:__ Perl 5 and Python 3 are already installed in miniconda platform. Java is need to be installed seperately by simply download through bioconda channel:
 
-```
-$ conda install -c bioconda java-jdk
-```
+	```
+	conda create -n iprscan python=3.7 java-jdk 
+	```
+
