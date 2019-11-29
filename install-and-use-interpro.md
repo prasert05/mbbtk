@@ -6,13 +6,13 @@
 * Personal computer or server with 64-bit GNU/Linux operating system
 	> To check the Linux system information, simply type command below in the terminal.
 
-	```
-	$ uname -a
-	# The expected output sequentially should be your kernel name, localhost name, kernel release, 
-	# kernel version, machine hardware name (ex. x86_64 or x86_32), 
-	# processor type (ex. x86_64 or x86_32), hardware platform (ex. x86_64 or x86_32) 
-	# and operating system name
-	```
+```sh
+uname -a
+# The expected output sequentially should be your kernel name, localhost name, kernel release, 
+# kernel version, machine hardware name (ex. x86_64 or x86_32), 
+# processor type (ex. x86_64 or x86_32), hardware platform (ex. x86_64 or x86_32) 
+# and operating system name
+```
 
 * Java JDK/JRE version 11
 * Perl 5
@@ -20,7 +20,7 @@
 
  > __optional:__ For conda user, Java is need to be installed seperately by simply download through bioconda channel [![java](https://img.shields.io/badge/install-java-orange)](https://anaconda.org/conda-forge/openjdk)
 
-```
+```sh
 # create environment name 'iprscan' and install openjdk
 conda create -n iprscan openjdk
 ``` 
@@ -28,7 +28,7 @@ conda create -n iprscan openjdk
 ## Download InterProScan installer and extensions
 ### InterProScan installer
 
-InterProScan installer can be downloaded from ftp://ftp.ebi.ac.uk/pub/software/unix/iprscan/5/. The lastest version we've used is v5.39 (ftp://ftp.ebi.ac.uk/pub/software/unix/iprscan/5/5.39-77.0/interproscan-5.39-77.0-64-bit.tar.gz). According to the recommendation of [ebi-pf-team](https://github.com/ebi-pf-team/interproscan/wiki/HowToDownload#64-bit-distribution). MD5 cheksum is mandatory for a large downloaded file. So the command below is to create directory, download the installer and checksum.
+InterProScan installer can be downloaded from ftp://ftp.ebi.ac.uk/pub/software/unix/iprscan/5/. The lastest version we've used is v5.39 [(ftp://ftp.ebi.ac.uk/pub/software/unix/iprscan/5/5.39-77.0/interproscan-5.39-77.0-64-bit.tar.gz)](ftp://ftp.ebi.ac.uk/pub/software/unix/iprscan/5/5.39-77.0/interproscan-5.39-77.0-64-bit.tar.gz). According to the recommendation of [ebi-pf-team](https://github.com/ebi-pf-team/interproscan/wiki/HowToDownload#64-bit-distribution). MD5 cheksum is mandatory for a large downloaded file. So the command below is to create directory, download the installer and checksum.
 
 ```sh
 
