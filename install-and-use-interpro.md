@@ -28,7 +28,7 @@ conda create -n iprscan openjdk
 ## Download InterProScan installer and extensions
 ### InterProScan installer
 
-InterProScan installer can be downloaded from ftp://ftp.ebi.ac.uk/pub/software/unix/iprscan/5/. [InterProScan lastest version](ftp://ftp.ebi.ac.uk/pub/software/unix/iprscan/5/5.39-77.0/interproscan-5.39-77.0-64-bit.tar.gz) we've used is v5.39. According to the recommendation of [ebi-pf-team](https://github.com/ebi-pf-team/interproscan/wiki/HowToDownload#64-bit-distribution). MD5 cheksum is mandatory for a large downloaded file. So the command below is to create directory, download the installer and checksum.
+InterProScan installer can be downloaded from [ftp://ftp.ebi.ac.uk/pub/software/unix/iprscan/5](ftp://ftp.ebi.ac.uk/pub/software/unix/iprscan/5). [InterProScan lastest version](ftp://ftp.ebi.ac.uk/pub/software/unix/iprscan/5/5.39-77.0/interproscan-5.39-77.0-64-bit.tar.gz) we've used is v5.39. According to the recommendation of [ebi-pf-team](https://github.com/ebi-pf-team/interproscan/wiki/HowToDownload#64-bit-distribution). MD5 cheksum is mandatory for a large downloaded file. So the command below is to create directory, download the installer and checksum.
 
 ```sh
 
@@ -44,7 +44,7 @@ md5sum -c interproscan-5.39-77.0-64-bit.tar.gz.md5
 
 ```
 
- > __Optional:__ We have a copy of the installer and Panther model database in our lab. The installer is available on ftp://172.28.31.82 For users in Prince of Songkhla University. Use this command below to download and checksum
+ > __Optional:__ We have a copy of the installer and Panther model database in our lab. The installer is available on Private FTP of our lab for users in Prince of Songkhla University. Use this command below to download and checksum
 
 ```sh
 # download installer pack and checksum file
