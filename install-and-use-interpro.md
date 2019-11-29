@@ -28,7 +28,7 @@ conda create -n iprscan openjdk
 ## Download InterProScan installer and extensions
 ### InterProScan installer
 
-InterProScan installer can be downloaded from [ftp://ftp.ebi.ac.uk/pub/software/unix/iprscan/5](ftp://ftp.ebi.ac.uk/pub/software/unix/iprscan/5). [InterProScan lastest version](ftp://ftp.ebi.ac.uk/pub/software/unix/iprscan/5/5.39-77.0/interproscan-5.39-77.0-64-bit.tar.gz) we've used is v5.39. According to the recommendation of [ebi-pf-team](https://github.com/ebi-pf-team/interproscan/wiki/HowToDownload#64-bit-distribution). MD5 cheksum is mandatory for a large downloaded file. So the command below is to create directory, download the installer and checksum.
+InterProScan installer can be downloaded from ftp://ftp.ebi.ac.uk/pub/software/unix/iprscan/5. InterProScan lastest version we've used is v5.39 (ftp://ftp.ebi.ac.uk/pub/software/unix/iprscan/5/5.39-77.0/interproscan-5.39-77.0-64-bit.tar.gz). According to the recommendation of [ebi-pf-team](https://github.com/ebi-pf-team/interproscan/wiki/HowToDownload#64-bit-distribution). MD5 cheksum is mandatory for a large downloaded file. So the command below is to create directory, download the installer and checksum.
 
 ```sh
 
