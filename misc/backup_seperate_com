@@ -2,24 +2,29 @@
 # =============================================================================
 # This shell script can used for compress folder seperatly into *.tar.gz file
 # Created by Prasert Yodsawat
-# Version 1.0 (tested on Ubuntu)
-# Required software: pigz
+# Version 1.1 (tested on Ubuntu)
+# Required software: pigz, parallel
 # ============================================================================
-# 
-# START
+# #########
+# # START #
+# #########
 # 
 # Clear all variable
 unset flist_com
 unset i
 unset nCPU
 unset j
+# 
 # Print script title
 echo -e "\nThis shell script can used for compress folder seperatly into *.tar.gz file\n"
+# 
 # Enter number of CPU
 read -p "Enter number of CPU: " nCPU
 echo -e "\n========================\n [STATUS] Please wait...\n========================\n"
+# 
 # Check "pigz" exists
 if [[ `type -t pigz` == "file" ]]; then
+# 
 # Find folder's name
 flist_com=`ls -1`
 j=`date --rfc-3339=date`
@@ -32,10 +37,16 @@ echo -e "\n========================\n [STATUS] Done !\n========================\
 else
 echo "\n========================\n [ERROR]\n Please install \"pigz\" first!\n========================\n"
 fi
+# 
+# Generate MD5 files
+find *.tar.gz | sed 's/.tar.gz//g' | parallel 'md5sum {}.tar.gz > {}.md5'
+# 
 # Clear all variable again
 unset flist_com
 unset i
 unset nCPU
 unset j
 # 
-# END
+# #######
+# # END #
+# #######
