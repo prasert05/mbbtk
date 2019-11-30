@@ -2,20 +2,24 @@
 # =============================================================================
 # This shell script can used for decompress backup file seperatly
 # Created by Prasert Yodsawat
-# Version 1.0 (tested on Ubuntu)
+# Version 1.1 (tested on Ubuntu)
 # ============================================================================
-#
-# START
-#
+# #########
+# # START #
+# #########
+# 
 # Clear all variable
 unset flist_de
 unset i
 unset Prompt_del
+# 
 # Print script title
 echo -e "\nThis shell script can used for decompress backup file seperatly\n"
+# 
 # Prompt to delete original backup files
 read -p "Delete original files?: [y or n] [default: no]: " Prompt_del
 echo -e "\n========================\n [STATUS] Please wait...\n========================\n"
+# 
 # Check backup file exists
 if [[ `ls -1 | egrep -c '*.tar.gz'`!=0 ]]; then
 # Find folder's name
@@ -32,9 +36,11 @@ echo -e "\n========================\n [STATUS] Done !\n========================\
 else
 echo -e "\n========================\n [ERROR] Backup file does not exists!\n========================\n"
 fi
+# 
 # Clear all variable again
 unset flist_de
 unset i
 unset Prompt_del
-#
-# END
+# #######
+# # END #
+# #######
