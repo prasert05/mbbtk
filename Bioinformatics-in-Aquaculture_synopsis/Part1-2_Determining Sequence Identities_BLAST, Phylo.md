@@ -19,45 +19,45 @@ Part 2 : Seed & Extend
 
 Part 3 : Amino acid differences 
 <div align="center">
-  <a href="https://www.youtube.com/watch?v=K7i2XbFZv6Y"><img src="https://img.youtube.com/K7i2XbFZv6Y.jpg" alt="BLAST-3"></a>
+  <a href="https://www.youtube.com/watch?v=K7i2XbFZv6Y"><img src="https://img.youtube.com/vi/K7i2XbFZv6Y/0.jpg" alt="BLAST-3"></a>
 </div>
 
 
 Part 4 : PAM vs BLOSUM (optional)
 <div align="center">
-  <a href="https://www.youtube.com/watch?v=68lF71zEUF8"><img src="https://img.youtube.com/68lF71zEUF8.jpg" alt="BLAST-4"></a>
+  <a href="https://www.youtube.com/watch?v=68lF71zEUF8"><img src="https://img.youtube.com/vi/68lF71zEUF8/0.jpg" alt="BLAST-4"></a>
 </div>
 
 
 Part 5 : BLOSUM62 (optional)
 <div align="center">
-  <a href="https://www.youtube.com/watch?v=njva17LwhsE"><img src="https://img.youtube.com/njva17LwhsE.jpg" alt="BLAST-4"></a>
+  <a href="https://www.youtube.com/watch?v=njva17LwhsE"><img src="https://img.youtube.com/vi/njva17LwhsE/0.jpg" alt="BLAST-4"></a>
 </div>
 
 
 Part 6 : Scoring alignments (optional)
 <div align="center">
-  <a href="https://www.youtube.com/watch?v=2V9HNxbWUMg"><img src="https://img.youtube.com/2V9HNxbWUMg.jpg" alt="BLAST-4"></a>
+  <a href="https://www.youtube.com/watch?v=2V9HNxbWUMg"><img src="https://img.youtube.com/vi/2V9HNxbWUMg/0.jpg" alt="BLAST-4"></a>
 </div>
  
 
 Part 7 : Scoring gaps (optional)
 <div align="center">
-  <a href="https://www.youtube.com/watch?v=2YUECI6cLHo"><img src="https://img.youtube.com/2YUECI6cLHo.jpg" alt="BLAST-4"></a>
+  <a href="https://www.youtube.com/watch?v=2YUECI6cLHo"><img src="https://img.youtube.com/vi/2YUECI6cLHo/0.jpg" alt="BLAST-4"></a>
 </div>
 
 Part 8 : Probability
 <div align="center">
-  <a href="https://www.youtube.com/watch?v=ZldgQTq4IyU"><img src="https://img.youtube.com/ZldgQTq4IyU.jpg" alt="BLAST-4"></a>
+  <a href="https://www.youtube.com/watch?v=ZldgQTq4IyU"><img src="https://img.youtube.com/vi/ZldgQTq4IyU/0.jpg" alt="BLAST-4"></a>
 </div>
 
 Part 9 : E-values
 <div align="center">
-  <a href="https://www.youtube.com/watch?v=S3gr8gjKHhc"><img src="https://img.youtube.com/S3gr8gjKHhc.jpg" alt="BLAST-4"></a>
+  <a href="https://www.youtube.com/watch?v=S3gr8gjKHhc"><img src="https://img.youtube.com/vi/S3gr8gjKHhc/0.jpg" alt="BLAST-4"></a>
 </div>
 
 Part 10 : Algorithms
 <div align="center">
-  <a href="https://www.youtube.com/watch?v=1l2p_Q7QyB4"><img src="https://img.youtube.com/1l2p_Q7QyB4.jpg" alt="BLAST-4"></a>
+  <a href="https://www.youtube.com/watch?v=1l2p_Q7QyB4"><img src="https://img.youtube.com/vi/1l2p_Q7QyB4/0.jpg" alt="BLAST-4"></a>
 </div>
 
