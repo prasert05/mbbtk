@@ -13,7 +13,7 @@ Part 1 : Introduction
 
 Part 2 : Seed & Extend
 <div align="center">
-  <a href="https://www.youtube.com/watch?v=kAAme1fBanc"><img src="https://img.youtube.com/kAAme1fBanc/0.jpg" alt="BLAST-2"></a>
+  <a href="https://www.youtube.com/watch?v=kAAme1fBanc"><img src="https://img.youtube.com/vi/kAAme1fBanc/0.jpg" alt="BLAST-2"></a>
 </div>
 
 
