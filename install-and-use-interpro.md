@@ -1,4 +1,4 @@
-# Using InterProScan as a protein classification tool
+# Using InterProScan based on Bioconda
 
 [InterProScan intro](https://github.com/ebi-pf-team/interproscan/wiki#what-is-interproscan)
 
@@ -13,17 +13,24 @@ uname -a
 # processor type (ex. x86_64 or x86_32), hardware platform (ex. x86_64 or x86_32) 
 # and operating system name
 ```
-
+* Bioconda
 * Java JDK/JRE version 11
 * Perl 5
 * Python 3 
 
- > __optional:__ For conda user, Java is need to be installed seperately by simply download through bioconda channel [![java](https://img.shields.io/badge/install-java-orange)](https://anaconda.org/conda-forge/openjdk)
-
+ > __optional:__ 
+ > For conda user, For conda user, Java is need to be installed seperately by simply download through conda-forge channel [![java](https://img.shields.io/badge/install-java-orange)](https://anaconda.org/conda-forge/openjdk). Simply do as follow:
 ```sh
-# create environment name 'iprscan' and install openjdk
-conda create -n iprscan openjdk
-``` 
+# Create environment for InterProScan's dependencies
+conda create -n iprscan
+
+# Activate channel
+conda activate iprscan
+
+# Install Java openJDK
+conda install -c conda-forge openjdk
+
+```
 
 ## Download InterProScan installer and extensions
 
