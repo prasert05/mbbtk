@@ -28,7 +28,7 @@ conda create -n iprscan
 conda activate iprscan
 
 # Install Java openJDK
-conda install -c conda-forge openjdk
+conda install -c conda-forge python=3.8.1 openjdk=11.0.1
 
 ```
 
