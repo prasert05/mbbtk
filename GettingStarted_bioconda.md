@@ -1,4 +1,4 @@
-# Getting started with Bioconda and Bioconda
+# Getting started with Miniconda and Bioconda
 In our lab, We prefer to use Miniconda3 to manage environment for such a software with a specific version of its dependencies by isolate them into a specific environments. Moreover, we usually perform computational analyses on shared server of our department, so managing environment with miniconda make user to perform any software without root permission and user can manage environment, such as add recipes (any packages in bioconda), create environment, or even delete environment by themselves.
 
 Prior to use Bioconda, the Miniconda3 package is required to install on your local machine. We briefly summarized how to install Bioconda from [Bioconda's user docs](https://bioconda.github.io/user/install.html) as a reference for installation.
@@ -34,7 +34,7 @@ $ conda config --add channels conda-forge
 
 This content is referred from [Conda's managing environment docs](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html). User can create, export, list, remove, and update environments as you prefer. Or even backup and share the environment via `.yml` metafile.
 
-The `base` is the default environment when the installation is completed. But if you don't want `base` to activativate automatically, simply type:
+The `base` is the default environment when the installation is completed. But if you don't want `base` to activate automatically, simply type:
 ```sh
 $ conda config --set auto_activate_base false
 ```
