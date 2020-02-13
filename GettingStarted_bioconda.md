@@ -75,6 +75,12 @@ $ conda create -n deepsig python=2.7 biopython=1.72 tensorflow=1.5.0 keras=2.2.4
 # export current environment into environment.yml
 $ conda env export > environment.yml
 ```
+There is an optional way to export a specific environment, even you are activate other environments. Simply add parameter `--name`  follow by environment name to be export in the command. 
+
+```sh
+# export 'myenv' environment into myenv.yml
+$ conda env export --name myenv > myenv.yml
+```
 
 ### Creating an environment from an environment.yml file:
 ```sh
